@@ -33,3 +33,8 @@ flowchart TD
     
     Decision -- No --> FinalAnswer[Synthesize Final Architectural Decision]
     FinalAnswer --> Output([Verified Solutions Output to User])
+
+---
+
+## Architecture Presentation & Technical Dossier
+- 📄 **[Download / View Architectural Presentation (HTML)](docs/architecture_presentation.html)**: Comprehensive breakdown of the ReAct pipeline, schema contracts, and enterprise scalability strategies.

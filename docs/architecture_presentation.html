@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
+<title>Laravel Agentic Orchestrator - System Architecture Presentation</title>
+<style>
+@page { size: 210mm 297mm; margin: 0; }
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+    padding: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1e293b;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+.badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0284c7;
+    background-color: #e0f2fe;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+h1 { font-size: 24px; color: #0f172a; margin: 8px 0; }
+h2 { font-size: 16px; color: #0f172a; border-left: 4px solid #0284c7; padding-left: 8px; margin-top: 24px; }
+table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 13px; }
+th { background: #f8fafc; text-align: left; padding: 8px; border-bottom: 2px solid #cbd5e1; }
+td { padding: 8px; border-bottom: 1px solid #e2e8f0; }
+pre { background: #0f172a; color: #f8fafc; padding: 12px; border-radius: 6px; font-size: 12px; overflow-x: auto; }
+.box { background: #f8fafc; border-left: 4px solid #0284c7; padding: 12px; margin-top: 12px; }
+</style>
+</head>
+<body>
+    <span class="badge">Architecture & System Design Dossier</span>
+    <h1>Laravel Agentic Orchestrator</h1>
+    <p><strong>Architect:</strong> Muhammad Ahmed | <strong>Repository:</strong> github.com/ahmedzarrar42/laravel-agentic-orchestrator</p>
+    
+    <h2>1. Executive Summary</h2>
+    <p>Autonomous AI Agent framework in Laravel 11 implementing recursive ReAct decision loops, strict JSON-Schema tool calling contracts, and Vector RAG retrieval.</p>
+
+    <h2>2. Architectural Pipeline</h2>
+    <table>
+        <tr><th>Stage</th><th>Component</th><th>Operational Role</th></tr>
+        <tr><td>Step 1</td><td>CLI / API Gateway</td><td>Ingests prompt and resolves singleton AgentOrchestrator.</td></tr>
+        <tr><td>Step 2</td><td>Tool Registry</td><td>Publishes strict JSON schemas from ToolInterface contracts.</td></tr>
+        <tr><td>Step 3</td><td>ReAct Loop</td><td>Autonomous reasoning cycle evaluating model intent against tool calls.</td></tr>
+        <tr><td>Step 4</td><td>Vector RAG</td><td>DocumentSearchRagTool semantic similarity search across knowledge chunks.</td></tr>
+        <tr><td>Step 5</td><td>Observation</td><td>Injects retrieved context back into history until final decision synthesis.</td></tr>
+    </table>
+
+    <h2>3. Production Defensibility</h2>
+    <div class="box">
+        Designed for asynchronous background execution via Redis queues & Laravel Horizon, sub-50ms vector query lookups, and strict isolation against parameter hallucinations.
+    </div>
+</body></html>
